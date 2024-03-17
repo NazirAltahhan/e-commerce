@@ -1,0 +1,94 @@
+[
+    {
+      "id": 0,
+      "Name": "cake sweet",
+      "Description": "Banana cake",
+      "Quatntity": 5,
+      "Price": 250,
+      "Picture": "src/Image/1.jpg"
+    },
+    {
+      "id": 1,
+      "Name": "cake sweet",
+      "Description": "Strawberry cake",
+      "Quatntity": 7,
+      "Price": 300,
+      "Picture": "src/Image/2.jpg"
+    },
+    {
+      "id": 2,
+      "Name": "cake sweet",
+      "Description": "Mango cake",
+      "Quatntity": 8,
+      "Price": 350,
+      "Picture": "src/Image/3.webp"
+    },
+    {
+      "id": 3,
+      "Name": "cake sweet",
+      "Description": "Snickers cake",
+      "Quatntity": 15,
+      "Price": 400,
+      "Picture": "src/Image/4.jpg"
+    },
+    {
+      "id": 4,
+      "Name": "cake sweet",
+      "Description": "Mars cake",
+      "Quatntity":12 ,
+      "Price": 400,
+      "Picture": "src/Image/14.jpg"
+    },
+    {
+      "id": 5,
+      "Name": "cake sweet",
+      "Description": "Bounty cake",
+      "Quatntity": 8,
+      "Price": 425,
+      "Picture": "src/Image/9.jpg"
+    },
+    {
+      "id": 6,
+      "Name": "cake sweet",
+      "Description": "Milk cake",
+      "Quatntity": 10,
+      "Price": 300,
+      "Picture": "src/Image/6.jpg"
+    },
+    {
+      "id": 7,
+      "Name": "cake sweet",
+      "Description": "Jelly cake",
+      "Quatntity": 10,
+      "Price": 350,
+      "Picture": "src/Image/7.jpg"
+    }
+    ,
+    {
+      "id": 8,
+      "Name": "cake sweet",
+      "Description": "Caramel cake",
+      "Quatntity": 12,
+      "Price": 300,
+      "Picture": "src/Image/8.jpg"
+    }
+    ,
+    {
+      "id": 9,
+      "Name": "cake sweet",
+      "Description": "Fruit cake",
+      "Quatntity": 10,
+      "Price": 375,
+      "Picture": "src/Image/10.jpg"
+    }
+    ,
+    {
+      "id": 10,
+      "Name": "cake sweet",
+      "Description": "Oreo cake",
+      "Quatntity": 7,
+      "Price": 400,
+      "Picture": "src/Image/15.webp"
+    }
+  ]
+  
