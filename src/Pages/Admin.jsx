@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { Card } from "react-bootstrap";
-import ProductData from "../products.json";
+import ProductData from "../mocks/products.json";
 const Admin = () => {
   const [Modalshow, setModalShow] = useState(false);
   const [DeleteModalshow, setDeleteModalShow] = useState(false);
