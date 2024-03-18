@@ -2,7 +2,7 @@
     display: grid;
     justify-content: center;
     height: 100vh;
-    background-image:url(/src/Image/14.png) ;
+    background-color: #ffbe98;
     align-items:center;
   }
   .login-container {
