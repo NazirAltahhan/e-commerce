@@ -1,17 +1,48 @@
+import { useEffect, useState } from "react";
+import ProductData from "../mocks/products.json";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Cards from "../Components/Cards";
 
-import Card from 'react-bootstrap/Card';
+const Cart = () => {
+  const [CartItem, setCartItem] = useState();
+  const Items = localStorage.getItem("cartId");
+  useEffect(() => {
+    if (Items) {
+      const parsedItems = JSON.parse(Items);
+      const GetProduct = () => {
+        const Compare = parsedItems.map((itemId) =>
+          ProductData.find((e) => e.id === itemId)
+        );
+        setCartItem(Compare);
+      };
+      GetProduct();
+    } else {
+      console.error("No data found in local storage");
+    }
+  }, []);
 
-function BasicExample() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-       {propsTypes.description}
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div>
+      <Container>
+        <Row>
+          {CartItem?.map((product, i) => (
+            <Col key={i}>
+              <Cards
+                title={product.Name}
+                src={require(`../Assets/Images/${product.Picture}`)}
+                description={product.Description}
+                Quatntity={product.Quatntity}
+                Price={product.Price}
+              ></Cards>
+            </Col>
+          ))}
+        </Row>
+        <div></div>
+      </Container>
+    </div>
   );
-}
+};
+
+export default Cart;
