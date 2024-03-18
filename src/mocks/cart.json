@@ -1,0 +1,23 @@
+[
+    {
+      "id": 0,
+      "User_Id": 0,
+      "Total_Amount": 1500
+    },
+    {
+      "id": 1,
+      "User_Id": 1,
+      "Total_Amount": 2000
+    },
+    {
+      "id": 2,
+      "User_Id": 2,
+      "Total_Amount": 5000
+    },
+    {
+      "id": 3,
+      "User_Id": 3,
+      "Total_Amount": 4000
+    }
+  ]
+  

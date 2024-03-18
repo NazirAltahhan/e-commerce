@@ -2,12 +2,9 @@
      box-sizing: border-box;
 }
 
-body{
-     margin:  0;
-     height: 100%;
-}
-
-html{
+body,
+html {
+  margin: 0px !important;
   height: 100%;
 }
 
@@ -18,11 +15,11 @@ justify-content: space-between;
 align-items: stretch;
 gap: 1rem;
 padding:  1rem;
+display: flex;
 }
 
 .site-title{
      font-size: 1rem;
-
      font-weight: bold;
 }
 
@@ -82,3 +79,12 @@ padding:  1rem;
 .home{
      height: 100%;
 }
+
+.menu {
+     margin-left: -138px !important;
+     margin-top: 8px !important;
+   }
+   .menuItem {
+     margin-left: 10px !important;
+   }
+   

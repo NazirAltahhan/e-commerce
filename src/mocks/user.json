@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 0,
+        "Email" : "Dania@gmail.com",
+        "Name" : "Dania",
+        "Picture":"",
+        "Address":"Istanbul",
+        "Password":"asdf",
+        "Type":"Admin"
+    },
+    {
+        "id" : 1,
+        "Email" : "Ahmed@gmail.com",
+        "Name" : "Ahmed",
+        "Picture":"",
+        "Address":"Istanbul",
+        "Password":"aeds",
+        "Type":"User"
+    },
+    {
+        "id" : 2,
+        "Email" : "Marah@gmail.com",
+        "Name" : "Marah",
+        "Picture":"",
+        "Address":"Istanbul",
+        "Password":"awse",
+        "Type":"User"
+    },
+    {
+        "id" : 3,
+        "Email" : "Mohammed@gmail.com",
+        "Name" : "Mohammed",
+        "Picture":"",
+        "Address":"Istanbul",
+        "Password":"wedf",
+        "Type":"User"
+    }
+]
