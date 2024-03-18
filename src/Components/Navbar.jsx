@@ -1,13 +1,24 @@
 const Navbar = (props) =>{
+     const name = localStorage.getItem('username')
 
     return(
 
 <nav className="nav">
-<a href="/"classname="site-title">
+<a href="/"className="site-title">
    {props.title}
 </a>
 <ul>
-   <li className="active">
+    {name === 'admin' ?
+       <li>
+            <a href="/admin">Admin</a>
+        </li> :
+        <li>
+            <a href="/user">User</a>
+        </li>}
+
+
+
+   {/* <li className="active">
        <a href="/home">Home</a>
    </li>
    <li>
@@ -15,7 +26,7 @@ const Navbar = (props) =>{
    </li>
    <li>
        <a href="/product">Product</a>
-   </li>
+   </li> */}
 </ul>
 
 </nav>
