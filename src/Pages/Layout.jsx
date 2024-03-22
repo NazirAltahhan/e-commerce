@@ -13,7 +13,7 @@ const Layout = () => {
 
   return (
     <div>
-      {name && <Navbar title="E-Commerce" />}
+      <i> {name && <Navbar title="Great Taste" />}</i>
       <Routes>
         {
           <>

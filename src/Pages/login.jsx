@@ -23,7 +23,7 @@ const Login = () => {
         <form>
           <Container className="login-container">
             <div className="login-tx">
-              <h3>Welcome ! </h3>
+              <h3><i>Enjoy great shopping</i> </h3>
             </div>
 
             <div className="login-form">

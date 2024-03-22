@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import profile from "../Assets/Images/profile.jpg";
+import profile from "../Assets/Img/13.jpg";
 import { useState } from "react";
 import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -62,7 +62,7 @@ const Profile = () => {
                     </InputGroup>
                   }{" "}
                 </Card.Text>
-                <Button variant="primary" onClick={() => Save()}>
+                <Button variant="info" onClick={() => Save()}>
                   {" "}
                   Save{" "}
                 </Button>

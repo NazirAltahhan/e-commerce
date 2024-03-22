@@ -9,7 +9,7 @@ const Cards = (props) => {
         <Card.Body>
           <Card.Title> {props.title}</Card.Title>
           <Card.Text
-            style={{ color: "grey", fontWeight: "bold", fontSize: "12px" }}
+            style={{ color: "gray", fontWeight: "bold", fontSize: "12px" }}
           >
             Description : {props.description}
           </Card.Text>
@@ -17,7 +17,7 @@ const Cards = (props) => {
             Quatntity : {props.Quatntity}
           </Card.Text>
           <Card.Text style={{ color: "red" }}>Price: {props.Price}</Card.Text>
-          <Button variant="primary" onClick={props.onClick}>
+          <Button variant="pButton" onClick={props.onClick}>
             {" "}
             {props.show}{" "}
           </Button>

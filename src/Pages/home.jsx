@@ -1,6 +1,6 @@
 import Cards from "../Components/Cards";
-import product2 from "../Assets/Images/2.jpg";
-import product3 from "../Assets/Images/3.webp";
+import product2 from "../Assets/Img/2.jpg";
+import product3 from "../Assets/Img/3.webp";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -48,7 +48,7 @@ function Home() {
                 title={product.Name}
                 onClick={() => handleCart(product.id, product.Price)}
                 show="Add To Cart"
-                src={require(`../Assets/Images/${product.Picture}`)}
+                src={require(`../Assets/Img/${product.Picture}`)}
                 description={product.Description}
                 Quatntity={product.Quatntity}
                 Price={product.Price}

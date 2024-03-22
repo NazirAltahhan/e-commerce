@@ -31,7 +31,7 @@ const Cart = () => {
             <Col key={i}>
               <Cards
                 title={product.Name}
-                src={require(`../Assets/Images/${product.Picture}`)}
+                src={require(`../Assets/Img/${product.Picture}`)}
                 description={product.Description}
                 Quatntity={product.Quatntity}
                 Price={product.Price}
