@@ -10,7 +10,6 @@ html {
 
 .nav{
 background-color:#eaeaea;
-/* justify-content: space-between; */
 align-items: stretch;
 gap: 1rem;
 padding:  1rem;
@@ -42,10 +41,6 @@ display: flex;
      list-style: none;
 }
 
-.nav-right{
-     /* text-align: right; */
-
-}
 .nav li .active{
      background-color: #555;
 }
@@ -99,11 +94,8 @@ display: flex;
      margin-top: 50px;
 }
 
-.cart-button{
-     width: 100%;
-}
-
-td{
-     padding-left: 10px;
+.text{
+     text-align: center;
+     margin: 15px;
 }
    

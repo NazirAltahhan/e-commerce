@@ -2,7 +2,7 @@
     {
       "id": 0,
       "Name": "Banana cake",
-      "Description": "Banana cake",
+      "Description": "Cake stuffed inside and out with banana",
       "Quatntity": 5,
       "Price": 250,
       "Picture": "1.jpg"
@@ -10,7 +10,7 @@
     {
       "id": 1,
       "Name": "Strawberry cake",
-      "Description": "Strawberry cake",
+      "Description": "Filled with strawberry cream, and decorated with strawberry pieces",
       "Quatntity": 7,
       "Price": 300,
       "Picture": "2.jpg"
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "Name": "Mango cake",
-      "Description": "Mango cake",
+      "Description": "Light cake with fresh mango pieces",
       "Quatntity": 8,
       "Price": 350,
       "Picture": "3.webp"
@@ -26,7 +26,7 @@
     {
       "id": 3,
       "Name": "Snickers cake",
-      "Description": "Snickers cake",
+      "Description": "Chocolate with a mixture of caramel, pistachio and nougat",
       "Quatntity": 15,
       "Price": 400,
       "Picture": "4.jpg"
@@ -34,7 +34,7 @@
     {
       "id": 4,
       "Name": "Mars cake",
-      "Description": "Mars cake",
+      "Description": "Filled with Belgian chocolate with Nescafe mary and Mars pieces on the outside",
       "Quatntity":12 ,
       "Price": 400,
       "Picture": "14.jpg"
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "Name": "Bounty cake",
-      "Description": "Bounty cake",
+      "Description": "Cocoa cake topped with a delicious coconut and chocolate layer",
       "Quatntity": 8,
       "Price": 425,
       "Picture": "9.jpg"
@@ -50,7 +50,7 @@
     {
       "id": 6,
       "Name": "Milk cake",
-      "Description": "Milk cake",
+      "Description": "Cake soaked in sweetened milk",
       "Quatntity": 10,
       "Price": 300,
       "Picture": "6.jpg"
@@ -58,7 +58,7 @@
     {
       "id": 7,
       "Name": "Jelly cake",
-      "Description": "Jelly cake",
+      "Description": "Strawberry jelly layer, cream and cake layer",
       "Quatntity": 10,
       "Price": 350,
       "Picture": "7.jpg"
@@ -67,7 +67,7 @@
     {
       "id": 8,
       "Name": "Caramel cake",
-      "Description": "Caramel cake",
+      "Description": "Cocoa cake with caramel and hazelnut cream",
       "Quatntity": 12,
       "Price": 300,
       "Picture": "8.jpg"
@@ -76,7 +76,7 @@
     {
       "id": 9,
       "Name": "Fruit cake",
-      "Description": "Fruit cake",
+      "Description": "Fruits inside and outside including nuts",
       "Quatntity": 10,
       "Price": 375,
       "Picture": "10.jpg"
@@ -85,7 +85,7 @@
     {
       "id": 10,
       "Name": "Oreo cake",
-      "Description": "Oreo cake",
+      "Description": "Oreo cream with Oreo biscuit flavored cake",
       "Quatntity": 7,
       "Price": 400,
       "Picture": "15.webp"

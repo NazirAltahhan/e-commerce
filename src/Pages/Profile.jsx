@@ -36,20 +36,18 @@ const Profile = () => {
                   Email : {email}
                 </Card.Text>
                 <Card.Text style={{ fontWeight: "bold" }}>
-                  Type : {type}{" "}
+                  Type : {type}
                 </Card.Text>
                 <Card.Text style={{ fontWeight: "bold" }}>
-                  Adress : {ShowAdress}{" "}
+                  Adress : {ShowAdress}
                 </Card.Text>
                 <Card.Text style={{ fontWeight: "bold" }}>
-                  Age : {UserAge}{" "}
+                  Age : {UserAge}
                 </Card.Text>
                 <Card.Text style={{ fontWeight: "bold" }}>
-                  {" "}
                   {
                     <InputGroup className="mt-2">
                       <InputGroup.Text id="inputGroup-sizing-default">
-                        {" "}
                         Adress
                       </InputGroup.Text>
                       <FormControl
@@ -60,11 +58,10 @@ const Profile = () => {
                         onChange={(e) => setAdress(e.target.value)}
                       />
                     </InputGroup>
-                  }{" "}
+                  }
                 </Card.Text>
                 <Button variant="info" onClick={() => Save()}>
-                  {" "}
-                  Save{" "}
+                  Save
                 </Button>
               </Card.Body>
             </Card>

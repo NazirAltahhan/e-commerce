@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <div>
-      <h2>List of cakes</h2>
+      <h2 className="text">List of cakes:</h2>
       <Col>
         <span style={{ marginLeft: "38px", color: "red", fontWeight: "bold" }}>
           {CartNumber}$

@@ -72,18 +72,18 @@ const Admin = () => {
             <td>{product.Price}</td>
             <td>{product.Quatntity}</td>
             <td>
-              {" "}
+              
               <FontAwesomeIcon
                 icon={faTrashAlt}
                 style={{ gap: "10px", color: "red" }}
                 onClick={ShowDeletemodal}
-              ></FontAwesomeIcon>{" "}
+              ></FontAwesomeIcon>
               <>/</>
               <FontAwesomeIcon
                 icon={faEdit}
                 onClick={() => showEditModal(product)}
                 style={{color:"green"}}
-              ></FontAwesomeIcon>{" "}
+              ></FontAwesomeIcon>
             </td>
           </tbody>
         ))}
@@ -207,8 +207,7 @@ const Admin = () => {
             <Row>
               <Col>
                 <InputGroup className="mt-2">
-                  <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
+                  <InputGroup.Text id="inputGroup-sizing-default">                   
                     Price
                   </InputGroup.Text>
                   <FormControl
@@ -223,7 +222,6 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
                     Quantity
                   </InputGroup.Text>
                   <FormControl
