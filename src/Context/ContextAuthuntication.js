@@ -10,12 +10,14 @@ export const AuthProvider = ({ children }) => {
     setUser(userName);
     userName === "admin"
       ? (window.location.pathname = "/admin")
-      : (window.location.pathname = "/user");
+      : (window.location.pathname = "/home");
   };
+
   const SignUp = (userName) => {
     localStorage.setItem("username", userName);
     setUser(userName);
   };
+
   const logOut = () => {
     setUser(null);
     localStorage.removeItem("username");

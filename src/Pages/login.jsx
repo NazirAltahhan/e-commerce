@@ -5,10 +5,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../styles/login.css";
 import Button from "react-bootstrap/Button";
-import { login, useAuth } from "../Context/ContextAuthuntication";
+import { useAuth } from "../Context/ContextAuthuntication";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 const Login = () => {
   const [UserName, setUserName] = useState();
@@ -22,23 +20,23 @@ const Login = () => {
       <div className="login-form-container">
         <form>
           <Container className="login-container">
-            <div className="login-tx">
-              <h3><i>Enjoy great shopping</i> </h3>
+            <div>
+              <h3><i>Login to enjoy a Great Taste</i> </h3>
             </div>
 
             <div className="login-form">
               <Row>
                 <Col>
-                  <InputGroup className="mt-2">
+                  <InputGroup className="mt-3">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
-                      UserName
+                      Name
                     </InputGroup.Text>
                     <FormControl
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
                       id="UserName"
                       value={UserName}
+                      type="text"
                       onChange={(e) => setUserName(e.target.value)}
                     />
                   </InputGroup>
@@ -46,9 +44,8 @@ const Login = () => {
               </Row>
               <Row>
                 <Col>
-                  <InputGroup className="mt-2">
+                  <InputGroup className="mt-3">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
                       Password
                     </InputGroup.Text>
                     <FormControl
@@ -60,15 +57,14 @@ const Login = () => {
                   </InputGroup>
                 </Col>
               </Row>
-              <Row className=" p-4">
-                <Button variant="secondary" onClick={() => LoginApp()}>
-                  {" "}
-                  Log In{" "}
+              <Row className="p-5">
+                <Button variant="info" onClick={() => LoginApp()}>
+                  Log In
                 </Button>
               </Row>
             </div>
-            <div className="login-tx">
-              <h6>Or You Don't Have an Account? </h6>
+            <div>
+              <h6>Or if you don't have an account? </h6>
               <a href="/signUp">Rigester Now </a>
             </div>
           </Container>

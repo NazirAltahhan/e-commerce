@@ -9,8 +9,7 @@ html {
 }
 
 .nav{
-background-color:#333;
-color: White;
+background-color:#eaeaea;
 /* justify-content: space-between; */
 align-items: stretch;
 gap: 1rem;
@@ -21,6 +20,9 @@ display: flex;
 .site-title{
      font-size: 1rem;
      font-weight: bold;
+     padding-left: 10px;
+     align-self: center;
+     margin: 0;
 }
 
 .nav a{
@@ -91,4 +93,9 @@ display: flex;
    .menuItem {
      margin-left: 10px !important;
    }
+
+.about-us-container{
+     text-align: center;
+     margin-top: 50px;
+}
    

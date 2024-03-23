@@ -8,17 +8,24 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/ContextAuthuntication";
+
+
 const SignUp = () => {
-  const [email, setEmail] = useState();
-  const [name, setName] = useState();
-  const [age, setAge] = useState();
   const navigate = useNavigate();
   const { SignUp } = useAuth();
+
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [age, setAge] = useState();
+  const [phone, setPhone] = useState();
+
   const handleRegister = () => {
-    SignUp(name);
+    SignUp(firstName);
     localStorage.setItem("email", email);
     localStorage.setItem("age", age);
-    navigate("/user");
+    localStorage.setItem("phone", phone);
+    navigate("/home");
   };
 
   return (
@@ -26,8 +33,8 @@ const SignUp = () => {
       <div className="login-form-container">
         <form>
           <Container className="login-container">
-            <div className="login-tx">
-              <h3><i>Enjoi with US</i></h3>
+            <div>
+              <h3><i>Join us to Enjoy a Great Taste</i></h3>
             </div>
 
             <div className="login-form">
@@ -35,15 +42,15 @@ const SignUp = () => {
                 <Col>
                   <InputGroup className="mt-2">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
-                      First Name
+                      First name
                     </InputGroup.Text>
                     <FormControl
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
-                      id="UserName"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      id="firstName"
+                      value={firstName}
+                      type="text"
+                      onChange={(e) => setFirstName(e.target.value)}
                     />
                   </InputGroup>
                 </Col>
@@ -52,13 +59,15 @@ const SignUp = () => {
                 <Col>
                   <InputGroup className="mt-2">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
-                      Last Name
+                      Last name
                     </InputGroup.Text>
                     <FormControl
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
-                      id="Password"
+                      id="lastName"
+                      value={lastName}
+                      type="text"
+                      onChange={(e) => setLastName(e.target.value)}
                     />
                   </InputGroup>
                 </Col>
@@ -67,14 +76,14 @@ const SignUp = () => {
                 <Col>
                   <InputGroup className="mt-2">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
                       Email
                     </InputGroup.Text>
                     <FormControl
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
-                      id="Password"
+                      id="email"
                       value={email}
+                      type="email"
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </InputGroup>
@@ -84,14 +93,31 @@ const SignUp = () => {
                 <Col>
                   <InputGroup className="mt-2">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
+                      Phone
+                    </InputGroup.Text>
+                    <FormControl
+                      aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default"
+                      id="phone"
+                      value={age}
+                      type="tel"
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
+                  </InputGroup>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <InputGroup className="mt-2">
+                    <InputGroup.Text id="inputGroup-sizing-default">
                       Age
                     </InputGroup.Text>
                     <FormControl
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
-                      id="Password"
+                      id="age"
                       value={age}
+                      type="number"
                       onChange={(e) => setAge(e.target.value)}
                     />
                   </InputGroup>
@@ -101,7 +127,6 @@ const SignUp = () => {
                 <Col>
                   <InputGroup className="mt-2">
                     <InputGroup.Text id="inputGroup-sizing-default">
-                      {" "}
                       Password
                     </InputGroup.Text>
                     <FormControl
@@ -113,15 +138,14 @@ const SignUp = () => {
                   </InputGroup>
                 </Col>
               </Row>
-              <Row className=" p-4">
-                <Button variant="secondary" onClick={handleRegister}>
-                  {" "}
-                  Sign Up{" "}
+              <Row className="p-5">
+                <Button variant="info" onClick={handleRegister}>
+                  Sign Up
                 </Button>
               </Row>
             </div>
-            <div className="login-tx">
-              <h6>Or You Have An Account? </h6>
+            <div>
+              <h6>Or if you have an account? </h6>
               <a href="/">Login Here </a>
             </div>
           </Container>
