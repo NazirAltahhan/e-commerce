@@ -99,7 +99,7 @@ const SignUp = () => {
                       aria-label="Default"
                       aria-describedby="inputGroup-sizing-default"
                       id="phone"
-                      value={age}
+                      value={phone}
                       type="tel"
                       onChange={(e) => setPhone(e.target.value)}
                     />
