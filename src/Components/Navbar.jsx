@@ -3,9 +3,9 @@ import userProfile from '../Assets/Img/user-profile.png'
 import adminProfile from '../Assets/Img/admin-profile.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import {  useState } from 'react';
 import { useAuth } from '../Context/ContextAuthuntication';
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 
 
 const Navbar = (props) =>{
@@ -17,7 +17,6 @@ const Navbar = (props) =>{
     const handleShow = () =>{ 
         setdropdownShow(!dropdownShow)
     }
-
 
     return(
 
@@ -38,7 +37,10 @@ const Navbar = (props) =>{
             <a href="/aboutUs">About us</a>
         </li>
         <li>
-            <a href="/cart">cart
+            <a href="/cart">
+            <span style={{ color: "red", fontWeight: "bold" }}>
+            $
+            </span>
               <FontAwesomeIcon
                 icon={faCartShopping}
                 style={{ fontSize: "1.5rem", paddingLeft: "5px" }}

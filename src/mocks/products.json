@@ -1,7 +1,7 @@
 [
     {
       "id": 0,
-      "Name": "cake sweet",
+      "Name": "Banana cake",
       "Description": "Banana cake",
       "Quatntity": 5,
       "Price": 250,
@@ -9,7 +9,7 @@
     },
     {
       "id": 1,
-      "Name": "cake sweet",
+      "Name": "Strawberry cake",
       "Description": "Strawberry cake",
       "Quatntity": 7,
       "Price": 300,
@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "Name": "cake sweet",
+      "Name": "Mango cake",
       "Description": "Mango cake",
       "Quatntity": 8,
       "Price": 350,
@@ -25,7 +25,7 @@
     },
     {
       "id": 3,
-      "Name": "cake sweet",
+      "Name": "Snickers cake",
       "Description": "Snickers cake",
       "Quatntity": 15,
       "Price": 400,
@@ -33,7 +33,7 @@
     },
     {
       "id": 4,
-      "Name": "cake sweet",
+      "Name": "Mars cake",
       "Description": "Mars cake",
       "Quatntity":12 ,
       "Price": 400,
@@ -41,7 +41,7 @@
     },
     {
       "id": 5,
-      "Name": "cake sweet",
+      "Name": "Bounty cake",
       "Description": "Bounty cake",
       "Quatntity": 8,
       "Price": 425,
@@ -49,7 +49,7 @@
     },
     {
       "id": 6,
-      "Name": "cake sweet",
+      "Name": "Milk cake",
       "Description": "Milk cake",
       "Quatntity": 10,
       "Price": 300,
@@ -57,7 +57,7 @@
     },
     {
       "id": 7,
-      "Name": "cake sweet",
+      "Name": "Jelly cake",
       "Description": "Jelly cake",
       "Quatntity": 10,
       "Price": 350,
@@ -66,7 +66,7 @@
     ,
     {
       "id": 8,
-      "Name": "cake sweet",
+      "Name": "Caramel cake",
       "Description": "Caramel cake",
       "Quatntity": 12,
       "Price": 300,
@@ -75,7 +75,7 @@
     ,
     {
       "id": 9,
-      "Name": "cake sweet",
+      "Name": "Fruit cake",
       "Description": "Fruit cake",
       "Quatntity": 10,
       "Price": 375,
@@ -84,7 +84,7 @@
     ,
     {
       "id": 10,
-      "Name": "cake sweet",
+      "Name": "Oreo cake",
       "Description": "Oreo cake",
       "Quatntity": 7,
       "Price": 400,

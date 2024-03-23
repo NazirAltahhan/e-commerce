@@ -15,19 +15,23 @@ function Home() {
   const [prices, setPrices] = useState([]);
   const [Ids, seIds] = useState([]);
   const navigate = useNavigate();
+
   const handleCart = (id, Cart_price) => {
     seIds((prevIds) => [...prevIds, id]);
     setPrices((prevPrices) => [...prevPrices, Cart_price]);
     let Count = prices.reduce((sum, price) => sum + price, Cart_price);
     localStorage.setItem("count", Count);
   };
+
   useEffect(() => {
     localStorage.setItem("cartId", JSON.stringify(Ids));
   }, [Ids]);
 
   const CartNumber = localStorage.getItem("count");
+
   return (
     <div>
+      <h2>List of cakes</h2>
       <Col>
         <span style={{ marginLeft: "38px", color: "red", fontWeight: "bold" }}>
           {CartNumber}$

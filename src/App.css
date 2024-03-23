@@ -98,4 +98,12 @@ display: flex;
      text-align: center;
      margin-top: 50px;
 }
+
+.cart-button{
+     width: 100%;
+}
+
+td{
+     padding-left: 10px;
+}
    

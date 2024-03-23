@@ -50,9 +50,8 @@ const Admin = () => {
   };
   return (
     <>
-      <div className="mt-3 mb-3">
-        {" "}
-        <Button variant="dark" onClick={Showmodal}>
+      <div className="mt-3 mb-3" style={{paddingLeft:"10px"}} >
+        <Button variant="info" onClick={Showmodal}>
           Add Product
         </Button>
       </div>
@@ -76,18 +75,20 @@ const Admin = () => {
               {" "}
               <FontAwesomeIcon
                 icon={faTrashAlt}
-                style={{ gap: "10px" }}
+                style={{ gap: "10px", color: "red" }}
                 onClick={ShowDeletemodal}
               ></FontAwesomeIcon>{" "}
               <>/</>
               <FontAwesomeIcon
                 icon={faEdit}
                 onClick={() => showEditModal(product)}
+                style={{color:"green"}}
               ></FontAwesomeIcon>{" "}
             </td>
           </tbody>
         ))}
       </Table>
+
       <Modal onHide={Closemodal} show={Modalshow}>
         <Modal.Header closeButton>Add Product</Modal.Header>
         <Modal.Body>
@@ -96,7 +97,6 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
                     Name
                   </InputGroup.Text>
                   <FormControl
@@ -110,8 +110,7 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
-                    Color
+                    Description
                   </InputGroup.Text>
                   <FormControl
                     aria-label="Default"
@@ -124,8 +123,7 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
-                    Size
+                    Price
                   </InputGroup.Text>
                   <FormControl
                     aria-label="Default"
@@ -180,7 +178,6 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
                     Name
                   </InputGroup.Text>
                   <FormControl
@@ -195,7 +192,6 @@ const Admin = () => {
               <Col>
                 <InputGroup className="mt-2">
                   <InputGroup.Text id="inputGroup-sizing-default">
-                    {" "}
                     Description
                   </InputGroup.Text>
                   <FormControl
@@ -249,6 +245,7 @@ const Admin = () => {
           <Button variant="dark"> Edit Product</Button>
         </Modal.Footer>
       </Modal>
+
       <Card></Card>
     </>
   );

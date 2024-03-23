@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import profile from "../Assets/Img/13.jpg";
+import profile from "../Assets/Img/user-profile.png";
 import { useState } from "react";
 import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -31,7 +31,7 @@ const Profile = () => {
               className=" ml-5 mr-4"
             >
               <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <Card.Title style={{ fontWeight: "bold", fontStyle: "italic"}}> {name}</Card.Title>
                 <Card.Text style={{ fontWeight: "bold" }}>
                   Email : {email}
                 </Card.Text>
