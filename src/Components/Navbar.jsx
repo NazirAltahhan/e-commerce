@@ -54,41 +54,45 @@ const Navbar = (props) => {
           ""
         )}
       </ul>
+      {name ? (
+        <ul>
+          <li>{name}</li>
+          <li>
+            <img
+              src={name === "admin" ? adminProfile : userProfile}
+              style={{ width: "20px", height: "20px", cursor: "pointer" }}
+              onClick={handleShow}
+              alt=""
+            />
 
-      <ul>
-        <li>{name}</li>
-        <li>
-          <img
-            src={name === "admin" ? adminProfile : userProfile}
-            style={{ width: "20px", height: "20px", cursor: "pointer" }}
-            onClick={handleShow}
-            alt=""
-          />
-
-          {dropdownShow && (
-            <Dropdown.Menu show={dropdownShow} align="end" className="menu">
-              <Dropdown.Header style={{ fontSize: "20px", fontWeight: "bold" }}>
-                {" "}
-                {name}{" "}
-              </Dropdown.Header>
-              <Dropdown.Item
-                eventKey="2"
-                className="menuItem"
-                onClick={() => navigate("/profile")}
-              >
-                My Profile{" "}
-              </Dropdown.Item>
-              <Dropdown.Item
-                eventKey="3"
-                className="menuItem"
-                onClick={() => logOut()}
-              >
-                Log Out{" "}
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          )}
-        </li>
-      </ul>
+            {dropdownShow && (
+              <Dropdown.Menu show={dropdownShow} align="end" className="menu">
+                <Dropdown.Header
+                  style={{ fontSize: "20px", fontWeight: "bold" }}
+                >
+                  {name}
+                </Dropdown.Header>
+                <Dropdown.Item
+                  eventKey="2"
+                  className="menuItem"
+                  onClick={() => navigate("/profile")}
+                >
+                  My Profile
+                </Dropdown.Item>
+                <Dropdown.Item
+                  eventKey="3"
+                  className="menuItem"
+                  onClick={() => logOut()}
+                >
+                  Log Out
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            )}
+          </li>
+        </ul>
+      ) : (
+        ""
+      )}
     </nav>
   );
 };
