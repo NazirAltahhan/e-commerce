@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import Table from "react-bootstrap/Table";
 import Modal from "react-bootstrap/Modal";
@@ -10,7 +10,6 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import axios from "axios";
 import { Card } from "react-bootstrap";
 import ProductData from "../mocks/products.json";
 const Admin = () => {
@@ -50,7 +49,7 @@ const Admin = () => {
   };
   return (
     <>
-      <div className="mt-3 mb-3" style={{paddingLeft:"10px"}} >
+      <div className="mt-3 mb-3" style={{ paddingLeft: "10px" }}>
         <Button variant="info" onClick={Showmodal}>
           Add Product
         </Button>
@@ -72,7 +71,6 @@ const Admin = () => {
             <td>{product.Price}</td>
             <td>{product.Quatntity}</td>
             <td>
-              
               <FontAwesomeIcon
                 icon={faTrashAlt}
                 style={{ gap: "10px", color: "red" }}
@@ -82,7 +80,7 @@ const Admin = () => {
               <FontAwesomeIcon
                 icon={faEdit}
                 onClick={() => showEditModal(product)}
-                style={{color:"green"}}
+                style={{ color: "green" }}
               ></FontAwesomeIcon>
             </td>
           </tbody>
@@ -207,7 +205,7 @@ const Admin = () => {
             <Row>
               <Col>
                 <InputGroup className="mt-2">
-                  <InputGroup.Text id="inputGroup-sizing-default">                   
+                  <InputGroup.Text id="inputGroup-sizing-default">
                     Price
                   </InputGroup.Text>
                   <FormControl

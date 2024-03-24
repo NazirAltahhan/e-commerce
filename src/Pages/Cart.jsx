@@ -1,21 +1,27 @@
 import { useEffect, useState } from "react";
 import ProductData from "../mocks/products.json";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Cards from "../Components/Cards";
+import Table from "react-bootstrap/Table";
 
 const Cart = () => {
-  const [CartItem, setCartItem] = useState();
+  const [CartItems, setCartItems] = useState([]);
   const Items = localStorage.getItem("cartId");
+  const [total, setTotal] = useState(0);
+  const [Quantity, setQuantity] = useState(1);
+
   useEffect(() => {
     if (Items) {
       const parsedItems = JSON.parse(Items);
       const GetProduct = () => {
-        const Compare = parsedItems.map((itemId) =>
+        const products = parsedItems.map((itemId) =>
           ProductData.find((e) => e.id === itemId)
         );
-        setCartItem(Compare);
+        setCartItems(products);
+
+        // Calculate total price
+        const totalPrice = products.reduce((acc, currProduct) => {
+          return acc + currProduct.Price;
+        }, 0);
+        setTotal(totalPrice);
       };
       GetProduct();
     } else {
@@ -25,22 +31,28 @@ const Cart = () => {
 
   return (
     <div>
-      <Container>
-        <Row>
-          {CartItem?.map((product, i) => (
-            <Col key={i}>
-              <Cards
-                title={product.Name}
-                src={require(`../Assets/Img/${product.Picture}`)}
-                description={product.Description}
-                Quatntity={product.Quatntity}
-                Price={product.Price}
-              ></Cards>
-            </Col>
-          ))}
-        </Row>
-        <div></div>
-      </Container>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Product Price</th>
+          </tr>
+        </thead>
+        {CartItems.map((product, i) => (
+          <tbody key={i}>
+            <tr>
+              <td>{product.Name}</td>
+              <td>{Quantity}</td>
+              <td>{product.Price}</td>
+            </tr>
+          </tbody>
+        ))}
+        <tr>
+          <td colSpan={2}>Total</td>
+          <td>{total}</td>
+        </tr>
+      </Table>
     </div>
   );
 };

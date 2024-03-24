@@ -7,7 +7,6 @@ export const AuthProvider = ({ children }) => {
 
   const login = (userName) => {
     localStorage.setItem("username", userName);
-    // localStorage.setItem("count", 0);
 
     setUser(userName);
     userName === "admin"
@@ -22,9 +21,9 @@ export const AuthProvider = ({ children }) => {
 
   const logOut = () => {
     setUser(null);
-    localStorage.removeItem("username");
-    // localStorage.setItem("count", 0);
     window.location.pathname = "/";
+    localStorage.removeItem("username");
+    localStorage.setItem("count", 0);
   };
 
   return (

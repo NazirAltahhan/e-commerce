@@ -1,11 +1,8 @@
 import Cards from "../Components/Cards";
-import product2 from "../Assets/Img/2.jpg";
-import product3 from "../Assets/Img/3.webp";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProductData from "../mocks/products.json";
-import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
@@ -13,11 +10,11 @@ import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [prices, setPrices] = useState([]);
-  const [Ids, seIds] = useState([]);
+  const [Ids, setIds] = useState([]);
   const navigate = useNavigate();
 
   const handleCart = (id, Cart_price) => {
-    seIds((prevIds) => [...prevIds, id]);
+    setIds((prevIds) => [...prevIds, id]);
     setPrices((prevPrices) => [...prevPrices, Cart_price]);
     let Count = prices.reduce((sum, price) => sum + price, Cart_price);
     localStorage.setItem("count", Count);
@@ -31,18 +28,32 @@ function Home() {
 
   return (
     <div>
-      <h2 className="text">List of cakes:</h2>
-      <Col>
-        <span style={{ marginLeft: "38px", color: "red", fontWeight: "bold" }}>
-          {CartNumber}$
+      <Row>
+        <span>
+          <FontAwesomeIcon
+            icon={faCartShopping}
+            onClick={() => navigate("/cart")}
+            style={{
+              fontSize: "1.5rem",
+              marginTop: "10px",
+              marginLeft: "10px",
+            }}
+            className="mr-5"
+          ></FontAwesomeIcon>
+          <span
+            style={{
+              marginLeft: "10px",
+              color: "red",
+              fontWeight: "bold",
+            }}
+          >
+            {CartNumber}$
+          </span>
         </span>
-        <FontAwesomeIcon
-          icon={faCartShopping}
-          onClick={() => navigate("/cart")}
-          style={{ fontSize: "2rem", marginTop: "10px" }}
-          className="mr-5"
-        ></FontAwesomeIcon>
-      </Col>
+        <span>
+          <h2 className="page-title">List of cakes</h2>
+        </span>
+      </Row>
 
       <Container>
         <Row>

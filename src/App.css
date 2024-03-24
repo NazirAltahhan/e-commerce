@@ -10,18 +10,17 @@ html {
 
 .nav{
 background-color:#eaeaea;
+justify-content: space-between;
 align-items: stretch;
 gap: 1rem;
-padding:  1rem;
+padding:  1rem !important;
 display: flex;
 }
 
 .site-title{
      font-size: 1rem;
      font-weight: bold;
-     padding-left: 10px;
-     align-self: center;
-     margin: 0;
+     margin: 10px;
 }
 
 .nav a{
@@ -91,11 +90,16 @@ display: flex;
 
 .about-us-container{
      text-align: center;
-     margin-top: 50px;
+     margin-top: 20px;
 }
 
 .text{
      text-align: center;
      margin: 15px;
+}
+
+.page-title{
+     text-align: center;
+     padding: 10px;
 }
    
